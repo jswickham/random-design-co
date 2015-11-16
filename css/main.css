@@ -113,6 +113,7 @@ html {
     left: 0;
     width: 100%;
     overflow: auto;
+    z-index: 1;
 }
 
 .page-header h1 {
@@ -164,9 +165,60 @@ html {
     text-transform: uppercase;
 }
 
+section {
+    padding: 1em;
+}
+
+section h3 {
+    padding: .1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.projects {
+    background: hsla(0, 0%, 100%, 0.4);
+    position: relative;
+    color: #fff; 
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+    padding: .1em;
+}
+
+.projects-bg {
+    display: block;
+    position: relative;
+    z-index: -10;
+    width: 100%;
+}
+
+.projects-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projects-content a {
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.projects:hover  {
+    background: none;
+    color: #fff;
+}
 
 
 
+footer {
+    text-align: center;
+    clear: both;
+}
 
 
 

@@ -208,16 +208,17 @@ img {
     color: #000;
 }
 
-.projects:hover  {
+.projects:hover, a:hover  {
     background: none;
     color: #fff;
 }
 
 
-
 footer {
     text-align: center;
     clear: both;
+    margin-top: 10em;
+    overflow: auto;
 }
 
 

@@ -156,6 +156,14 @@ html {
     border: 3px solid #fff;
 }
 
+.main-top {
+    padding: 1.5em 3em 1em 1em;
+}
+
+.main h3 {
+    text-transform: uppercase;
+}
+
 
 
 

@@ -106,14 +106,13 @@ html {
 .page-header {
     background-color: #000;
     color: #fff;
+    margin: auto;
+    padding: 1em 1em 1.5em 1em;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     overflow: auto;
-    margin: auto;
-    
-   
 }
 
 .page-header h1 {
@@ -122,7 +121,39 @@ html {
     font-size: 1em;
 }
 
+.fa {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
 
+.be-random {
+    background-image: url(../img/purple-bg.jpeg);
+    padding: 5em 8.67em 5em 8.67em;
+}
+
+.be-random h2 {
+    font-size: 2.5em;
+    color: #fff;
+    padding-bottom: 1em;
+    line-height: 1em;
+}
+
+.be-random a {
+    color: #fff;
+    font-size: 1em;
+}
+
+.be-random a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.button {
+    text-decoration: none;
+    padding: 1em;
+    border: 3px solid #fff;
+}
 
 
 

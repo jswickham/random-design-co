@@ -127,24 +127,25 @@ html {
     top: 1em;
 }
 
-.be-random {
+.callout {
     background-image: url(../img/purple-bg.jpeg);
     padding: 5em 8.67em 5em 8.67em;
+    text-align: center;
 }
 
-.be-random h2 {
+.callout h2 {
     font-size: 2.5em;
     color: #fff;
     padding-bottom: 1em;
     line-height: 1em;
 }
 
-.be-random a {
+.callout a {
     color: #fff;
     font-size: 1em;
 }
 
-.be-random a:hover {
+.callout a:hover {
     background-color: #fff;
     color: #000;
 }

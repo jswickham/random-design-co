@@ -103,23 +103,32 @@ html {
   box-sizing: inherit;
 }
 
+body {
+    padding-top: 3em;
+}
+
+h1, h2, h3, h4, h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
 .page-header {
-    background-color: #000;
+    background: #000;
     color: #fff;
-    margin: auto;
-    padding: 1em 1em 1.5em 1em;
+    padding: 1em;
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
-    overflow: auto;
-    z-index: 1;
 }
 
 .page-header h1 {
     margin: 0;
-    text-transform: uppercase;
-    font-size: 1em;
 }
 
 .fa {
@@ -128,63 +137,71 @@ html {
     top: 1em;
 }
 
-.callout {
-    background-image: url(../img/purple-bg.jpeg);
-    padding: 5em 8.67em 5em 8.67em;
+.page-section {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.statement {
+    padding: 0;
+    position: relative;
+}
+
+.statement-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
     text-align: center;
 }
 
-.callout h2 {
-    font-size: 2.5em;
-    color: #fff;
-    padding-bottom: 1em;
-    line-height: 1em;
+.statement-bg {
+    display: block;
+    position:relative;
+    z-index: -10;
+    width: 100%;
 }
 
-.callout a {
+.statement-content h2 {
+    margin-top: 0;
+    font-size: 3em;
     color: #fff;
-    font-size: 1em;
-}
-
-.callout a:hover {
-    background-color: #fff;
-    color: #000;
 }
 
 .button {
+    display: inline-block;
+    font-size: 1.25em;
     text-decoration: none;
-    padding: 1em;
-    border: 3px solid #fff;
+    padding: .5em 1em;
+    border: 3px solid #000;
+    color: #000;
 }
 
-.main-top {
-    padding: 1.5em 3em 1em 1em;
+.button:hover {
+    color: #fff;
+    background: #000;
 }
 
-.main h3 {
-    text-transform: uppercase;
+.statement-content .button {
+    color: #fff;
+    border-color: #fff;
 }
 
-section {
-    padding: 1em;
+.statement-content .button:hover {
+    color: #000;
+    background: #fff;
 }
 
-section h3 {
-    padding: .1em;
-}
-
-img {
-    max-width: 100%;
-}
-
-.projects {
+.project-thumb {
+    border: 1px solid white;
     background: hsla(0, 0%, 100%, 0.4);
     position: relative;
     color: #fff; 
     float: left;
     width: 50%;
     text-transform: uppercase;
-    padding: .1em;
 }
 
 .projects-bg {
@@ -194,30 +211,26 @@ img {
     width: 100%;
 }
 
-.projects-content {
+.project-thumb h3 {
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.projects-content a {
-    margin: 0;
-    text-decoration: none;
-    font-weight: bold;
+    text-align: center;
     color: #000;
 }
 
-.projects:hover, a:hover  {
-    background: none;
+.project-thumb:hover  {
+    background: hsla(0, 0%, 0%, .5);
+}
+
+.project-thumb:hover h3 {
     color: #fff;
 }
 
-footer {
+.page-footer {
     text-align: center;
-    clear: both;
-    margin-top: 10em;
-    overflow: auto;
 }
 
 
